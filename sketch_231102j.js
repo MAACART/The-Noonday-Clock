@@ -10,7 +10,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(1133, 1133);
   currentImageIndex = hour() % 12;
   setInterval(changeImage, 1000 * 60 * 60); // 1 hour in milliseconds
 }
