@@ -4,7 +4,7 @@ let backgroundImg;
 
 function preload() {
   for (let i = 1; i <= 12; i++) {
-    imageList.push(loadImage( i + ".png"));
+    imageList.push(loadImage( "0" + i + ".png"));
   }
   backgroundImg = loadImage("clock.png"); // Load your background image here
 }
