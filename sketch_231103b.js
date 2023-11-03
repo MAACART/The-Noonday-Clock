@@ -4,7 +4,7 @@ let images = [];
 var canvas;
 
 function setup() {
-   canvas = createCanvas(windowWidth, windowHeight);
+   canvas = createCanvas(1133, 1133t);
   frameRate(1); // Set the frame rate to 1 frame per hour
   changeImage(); // Initially change the image
   
