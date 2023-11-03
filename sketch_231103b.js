@@ -29,8 +29,8 @@ function setup() {
 
 function draw() { 
   background(0);
-  image(reloj, windowWidth / 2, windowHeight / 2 );
-  image(images[currentFrame], windowWidth / 2, windowHeight / 2 );
+  image(reloj, 1133 / 2, 1133 / 2 );
+  image(images[currentFrame], windowWidth / 2, windowHeight / 2,1133 / 2,1133 / 2 );
 }
 
 function changeImage() {
