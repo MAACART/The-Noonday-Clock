@@ -1,9 +1,10 @@
 let currentFrame = 0;
 let reloj;
 let images = [];
+var canvas;
 
 function setup() {
-  createCanvas(1133, 1133);
+   canvas = createCanvas(windowWidth, windowHeight);
   frameRate(1); // Set the frame rate to 1 frame per hour
   changeImage(); // Initially change the image
   
