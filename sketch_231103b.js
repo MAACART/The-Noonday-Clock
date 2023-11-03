@@ -1,15 +1,15 @@
 let currentFrame = 0;
 let reloj;
 let images = [];
-var canvas;
 
 function setup() {
-   canvas = createCanvas(1133, 1133);
+  createCanvas(1133, 1133);
   frameRate(1); // Set the frame rate to 1 frame per hour
   changeImage(); // Initially change the image
   
   reloj = loadImage("clock.png");
-
+  // You can resize the image if needed
+  // reloj.resize(200, 0);
 
   currentFrame = hour() % 12;
 
@@ -29,11 +29,11 @@ function setup() {
 
 function draw() { 
   background(0);
-  image(reloj, width/4, height/4, width/2, height/2));
-  image(images[currentFrame], width/4, height/4, width/2, height/2));
+  image(reloj, width / 4, height / 4, width / 2, height / 2);
+  image(images[currentFrame], width / 4, height / 4, width / 2, height / 2);
 }
 
 function changeImage() {
   currentFrame = (currentFrame + 1) % 12;  // Use % to cycle through frames
- 
+  
 }
