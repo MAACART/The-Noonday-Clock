@@ -27,24 +27,10 @@ function setup() {
   images[11] = loadImage("12.png");
 }
 
-function windowResized() {
-  
-    pos = canvas.position();
-    slider.position(pos.x,pos.y+35);
-    daytxt.position(pos.x+15,pos.y+60);
-    acctxt.position(pos.x+15,pos.y);
-    info.position(pos.x+15,pos.y+height-30);
-    modal.position(pos.x,pos.y);
-    modal.size(width,height);
-    //close.position(15,height-30);
-  
-}
-
-
 function draw() { 
   background(0);
-  image(reloj, windowWidth / 2, windowHeight / 2, windowWidth / 2, windowHeight / 2);
-  image(images[currentFrame], windowWidth / 2, windowHeight / 2, windowWidth / 2, windowHeight / 2);
+  image(reloj, windowWidth / 2, windowHeight / 2 );
+  image(images[currentFrame], windowWidth / 2, windowHeight / 2 );
 }
 
 function changeImage() {
