@@ -4,20 +4,20 @@ let backgroundImg;
 
 function preload() {
   for (let i = 1; i <= 12; i++) {
-    imageList.push(loadImage(  i + ".png"));
+    imageList.push(loadImage(  i + ".png")); // diferentes fusos
   }
-  backgroundImg = loadImage("clock.png"); // Load your background image here
+  backgroundImg = loadImage("clock.png"); // imagem do relógio
 }
 
 function setup() {
   createCanvas(1133, 1133);
   currentImageIndex = hour() % 12;
-  setInterval(changeImage, 1000 * 60 * 60); // 1 hour in milliseconds
+  setInterval(changeImage, 1000 * 60 * 60); // 1 hour em millisegundos
 }
 
 function draw() {
-  image(backgroundImg, 0, 0, width, height); // Display the background image
-  image(imageList[currentImageIndex], 150, 150, 100, 100); // Display the current image
+  image(backgroundImg, 0, 0, width, height); //faz o fundo
+  image(imageList[currentImageIndex], 150, 150, 100, 100); //troca as imagens
 }
 
 function changeImage() {
